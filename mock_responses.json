@@ -1,0 +1,32 @@
+{
+  "success": {
+    "id": "resp_mock123456789",
+    "object": "response",
+    "created": 1759902800,
+    "model": "gpt-4-mock",
+    "conversation_id": "conv_mock987654321",
+    "text": "This is a successful mock response from the API client."
+  },
+  "long_response": {
+    "id": "resp_mock987654321",
+    "object": "response",
+    "created": 1759902900,
+    "model": "gpt-5-mock",
+    "conversation_id": "conv_mock123456789",
+    "text": "This is a much longer, more detailed mock response intended to simulate a complex answer that would have otherwise required a significant number of completion tokens, thereby providing a more realistic test case for parsing and display logic in a user interface without incurring costs."
+  },
+  "rate_limit_error": {
+    "error": {
+      "code": "rate_limit_exceeded",
+      "message": "You exceeded your current quota, please check your plan and billing details.",
+      "type": "insufficient_quota"
+    }
+  },
+  "content_filter": {
+    "error": {
+      "code": "content_filter",
+      "message": "The response was flagged for a content violation.",
+      "type": "invalid_request_error"
+    }
+  }
+}
